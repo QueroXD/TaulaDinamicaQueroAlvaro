@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="ejercicio2.css">
+</head>
+<body>
+    <form action="./ejercicio2.php" method="get">
+        <label for="precio">Precio:</label>
+        <input id="precio" name="precio" type="number" min="0.25" step="0.25" placeholder="Precio" required>
+        <label for="cantidad">Cantidad:</label>
+        <input id="cantidad" name="cantidad" type="number" placeholder="Cantidad" required>
+        <label for="tipoPago">Tipo de Pago:</label>
+        <select id="tipoPago" name="tipoPago" required>
+            <option value="0" selected>Efectivo</option>
+            <option value="1">Tarjeta de crédito</option>
+            <option value="2">Otros</option>
+        </select>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
